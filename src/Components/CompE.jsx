@@ -1,20 +1,19 @@
 import React, { useContext } from 'react';
 import { myContext } from '../App';
-import CompE from './CompE';
+import CompF from './CompF';
 
-const Compb = () => {
+const CompE = () => {
     const [contextValue,setContextValue]=useContext(myContext);
     const handlesubmit=()=>{
-        setContextValue(val=>val+1)
+        setContextValue(0);
     }
     return (
         <div>
-            <h1>Compb - {contextValue}</h1>
+            <h1>CompE-{contextValue}</h1>
             <button onClick={handlesubmit}>Click Me</button>
-            <CompE/>
+            <CompF/>
         </div>
     );
 };
 
-export default Compb;
-
+export default CompE;
