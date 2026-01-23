@@ -17,7 +17,7 @@ const App = () => {
         <Compb/>
       </myContext.Provider>
 
-      <myContext.Provider value={[name,setName]}>
+      <myContext.Provider value={{name,setName}}>
         <CompC/>
         <CompD/>
       </myContext.Provider>
